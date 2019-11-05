@@ -1,0 +1,21 @@
+<div class="margin pt-4">
+    <h1 class= "text-center mb-3 title">Todo App</h1>
+    <div class="input-group mb-3 input__container">
+        <input type="text" class="input__space" placeholder=" Task">
+        <button class="add__button" (click) = "addTask()"><i class="fas fa-plus plus-icon"></i></button>
+    </div>
+</div>
+<div class="tasks-container">
+    <div class="task-container" *ngFor = "let task of arrTask; let i = index">
+        <div class="row row-prop">
+            <div class="col-10">
+                <p class="task-text">{{task}}</p>
+            </div>
+            <div class="col-2">
+                <button class="delete-icon" (click) = "removeTask(i)">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

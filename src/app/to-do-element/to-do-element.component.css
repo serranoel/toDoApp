@@ -1,0 +1,71 @@
+.task-container {
+    background-color: #ffffff;
+    width: 90%;
+    height: 65px;
+    margin: 0 auto;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    border-left: 3px solid rgb(250, 113, 0)
+}
+.row-prop {
+    width: 95%;
+    margin: 0 auto;
+}
+.task-text {
+    color: rgb(135, 134, 141);
+    font-size: 1.1rem;
+    margin-top: 16px;
+}
+.delete-icon {
+    background-color: #ffffff;
+    border: none;
+}
+.delete-icon i {
+    color: rgb(135, 134, 141);
+    margin-top: 21px;
+}
+.width {
+    width: 35%;
+}
+.color {
+    background-color: rgb(244, 244, 244);
+}
+.margin {
+    margin-top: 15%;
+}
+.tasks-container {
+    margin-top: 35px;
+    height: 400px;
+    overflow: scroll;
+}
+.tasks-container::-webkit-scrollbar {
+    display: none;
+}
+.title {
+    font-size: 3rem;
+    color: rgb(250, 113, 0);
+}
+.input__container {
+    width: 90%;
+    margin: 0 auto;
+}
+.input__space {
+    width: 95%;
+    height: 40px;
+    position: relative;
+    border: 1px solid rgb(135, 134, 141);
+}
+.add__button {
+    width: 17%;
+    font-size: 3.5rem;
+    background-color: rgb(250, 113, 0);
+    border: none;
+    border-radius: 50%;  
+    position: absolute;
+    top: -22px;
+    right: -10px; 
+}
+.plus-icon {
+    color: #ffffff;
+    
+}
