@@ -11,7 +11,7 @@ export class ToDoElementComponent implements OnInit {
 
   constructor() { 
     let tasksLocalStorage = JSON.parse(localStorage.getItem("tasks"));
-    this.arrTask = (tasksLocalStorage != null ? tasksLocalStorage : [] );
+    this.arrTask = (tasksLocalStorage !== null ? tasksLocalStorage : [] );
   }
 
   ngOnInit() {
@@ -34,7 +34,7 @@ export class ToDoElementComponent implements OnInit {
   removeTask(index) {
     this.arrTask.splice(index, 1);
     if (typeof(Storage) !== 'undefined') {
-      localStorage.setItem("tasks", JSON.stringify(this.arrTask))
+    localStorage.setItem("tasks", JSON.stringify(this.arrTask))
     }
   }
 }
